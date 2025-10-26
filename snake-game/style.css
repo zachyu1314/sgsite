@@ -1,0 +1,23 @@
+:root{
+  --bg:#0b0b0b;
+  --grid:#111;
+  --blue:#4a90e2;
+  --green:#4ee44e;
+  --food:#ff4d4d;
+  --ui:#e6e6e6;
+}
+html,body{
+  height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue","Microsoft YaHei",sans-serif;
+  background:linear-gradient(180deg,#051018,#071526);color:var(--ui);
+  display:flex;align-items:center;justify-content:center;
+}
+.wrap{width:min(900px,96vw);display:grid;grid-template-columns:1fr 260px;gap:20px;padding:20px}
+.board{background:var(--bg);border-radius:12px;padding:12px;display:flex;align-items:center;justify-content:center}
+canvas{background:var(--grid);border-radius:12px;display:block}
+.panel{color:var(--ui);padding:12px}
+h1{font-size:18px;margin:0 0 12px 0}
+.info{font-size:14px;line-height:1.6}
+.controls{margin-top:12px}
+button{background:#0f1724;color:var(--ui);border:1px solid #233042;padding:8px 12px;border-radius:8px;cursor:pointer}
+.score{font-size:28px;font-weight:700}
+.footer{font-size:12px;color:#9aa6b2;margin-top:12px}
